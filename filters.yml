@@ -1,0 +1,17 @@
+version: v1
+filters:
+  test1:
+    datalink:
+      ethernet:
+        EthernetType: 0x0800 # IPv4
+    network:
+      ipv4:
+        protocol: 6 # TCP
+    transport:
+      tcp:
+        DstPort: 443
+    # application:
+    #   # regex:
+    #   #   - ".*www.example.com.*"
+    #   prefix:
+    #     - "1234"
